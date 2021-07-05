@@ -1,0 +1,689 @@
+﻿*{
+    font-family: 'Newsreader', serif;
+}
+
+/*Header do site*/
+
+header{
+    justify-content: space-between;
+    background-color: transparent;
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+
+/*menuMobile*/
+
+.menuMobile{
+    display: none;
+}
+.menuMobileIcon{
+    display: none;
+}
+
+/*Continua o header*/
+
+.logoHeader{
+    margin-left: 5%;
+    display: flex;
+}
+.logoHeader img{
+    width: 280px;
+    height: 50px;
+    align-self: center;
+}
+.cabecalho-nav{
+    display: flex;
+    align-self: center;
+}
+.cabecalho-nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-right: 30px;
+    padding: 12px;
+    border-radius: 3px;
+}
+.cabecalho-nav > a:hover{
+    background-color: #2f2a29;
+    transition: 0.7s;
+}
+
+/*sub menu*/
+
+.subMenu {
+    margin: auto;
+}
+.subMenu ul{
+    position: absolute;
+    background-color: #2f2a29;
+    top: 11%;
+    padding: 3px 10px 10px 0px;
+    border-radius: 3px ;
+    visibility: hidden;
+}
+.subMenu li {
+    padding: 13px 0;
+}
+.subMenu li:hover{
+    background-color: #c0a822;
+    color: black;
+    border-radius: 3px;
+}
+.subMenu li a{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0;
+}
+.subMenu li:hover a{
+    background-color: #c0a822;
+    color: black;
+
+}
+.subMenu:hover ul{
+    visibility: visible;
+}
+.icone{
+    background-image: url(../imagens/seta-para-baixo.png);
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    background-position: 100% 80%;
+}
+/*sobre Nós*/
+
+.headerSobre{
+    background-image: url(../imagens/Apresenta2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    height: 100vh;
+    width: 100%;
+    background: opacity(40%)
+}
+.textoSobreNos{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+.textoSobreNos h1{
+    font-size: clamp(2.9em,1em + 10vw,7.3vw) !important;
+    margin-top: 20vh;
+    color: rgb(255, 94, 0);
+    font-weight: bold;
+    text-shadow: 0 0 4px rgb(255, 94, 0);
+}
+.textoSobreNos p{
+    margin-top: 20vh;
+    color: white;
+    font-size: clamp(1.3em,1em + 5vw,3.5vw) !important;
+    font-weight: bold;
+}
+.textoSobreNos p:hover {
+    text-shadow: 0 0 2px #ffa704;
+
+}
+.textoSobreNos em {
+    color: #ffa704;
+}
+.textoAnimado:after{
+    content: '|';
+    opacity: 1;
+    animation: pisca 0.7s infinite;
+}
+@keyframes pisca {
+    0%,100% {
+        color: #ffa704;
+    }
+    50% {
+        color: transparent;
+    }
+}
+
+/*destaques*/
+
+.destaques{
+    width: 100%;
+    border-top: 2px solid #e9e9e9;  
+    background-color:#2f2a29;
+    box-sizing: border-box;
+    padding: 100px 0;
+    border-bottom: 2px solid #e9e9e9;  
+}
+
+.destaques img:hover{
+    opacity: 40%;
+    transition: 0.7s;
+}
+.tituloDestaques{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 84px;
+}
+ul.slick-dots {
+    display: none !important;
+}
+button.slick-prev{
+    font-size: 0px;
+    border: none;
+    width: 30px;
+    height: 51px;
+    background-color: transparent;
+    background-image: url(../imagens/anterior.png);
+    background-size: 25px 30px;
+    background-repeat: no-repeat;
+    float: left;
+    position: absolute;
+    right: 99%;
+    top: 40%;
+    cursor: pointer;
+}
+button.slick-next{
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    background-color: transparent;
+    background-image: url(../imagens/proximo.png);
+    background-size: 25px 30px;
+    background-repeat: no-repeat;
+    float: right;
+    position: absolute;
+    left: 98%;
+    top: 40%;
+    cursor: pointer;
+}
+.livrosDestaques{
+    width: 90%;
+    margin: auto;
+    background-color:transparent;
+}
+.livrosDestaques img{
+    width: 250px;
+    height: 320px;
+    margin: auto;
+}
+
+.destaquesPadrao a{
+    width: 100px;
+    padding: 10px;
+	margin: 15px auto;
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+    transition: 0.5s;
+    display: block;
+    text-align: center;
+    border: 4px solid green;
+    border-radius: 10px;
+}
+.destaquesPadrao a:hover{
+    background-color: green;
+}
+
+/*imagens hover*/
+
+.apresentaçãoLivros-main img:hover{
+    opacity: 40%;
+    transition: 0.7s;
+}
+
+/*Apresentação dos livros */
+
+/*Padrão dos titulos das seções*/
+
+.tituloPadrao{
+    box-sizing: border-box;
+    height: 150px;
+    font-size: 30pt;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    width: 100%;
+    font-weight: bold;
+}
+
+/*Vagalume*/
+
+.colecaoVagalume{
+    background-color: #000;
+    border-bottom: 2px solid #e9e9e9;
+}
+.livrosVagalume{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.livros{
+    width: 25%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.livros img{
+    width: 168px;
+    height: 211px;
+}
+.botões{
+
+	width: 100px;
+    padding: 10px;
+	margin: 15px auto;
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+    transition: 0.5s;
+    display: block;
+    text-align: center;
+    border: 4px solid green;
+    border-radius: 10px;
+}
+.botões:hover {
+    background-color: green
+}
+
+/*Coleções harry Potter*/
+
+.coleções1{
+   display: flex;
+   width: 100%;
+   justify-content: space-around;
+   background-color: #2f2a29;
+   border-bottom: 2px solid #e9e9e9;
+   padding: 40px 0;
+}
+.colecaoHarryPotter{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.livroHarryPotter img{
+    width: 252px;
+    height: 347px;
+}
+.livroHarryPotter a{
+    text-align: center;
+    width: 150px;
+    margin: 15px auto;
+}
+
+/*As cronicas de narnia*/
+
+ .CronicasDeNarnia{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.livroCronicasDeNarnia img{
+    width: 252px;
+    height: 347px;
+}
+.livroCronicasDeNarnia a{
+    text-align: center;
+    width: 150px;
+    margin: 15px auto; 
+}
+
+/*Sherlock Homes*/
+
+.sherlockHolmes{
+    display:flex;
+    flex-direction: column;
+}
+.sherlockHolmes img{
+    width: 252px;
+    height: 347px;
+}
+.sherlockHolmes a {
+    text-align: center;
+    width: 150px;
+    margin: 15px auto; 
+}
+
+/*Trilogia Senhor dos Aneis*/
+
+.senhorDosAneis{
+    background-color: #000;
+    border-bottom: 2px solid #e9e9e9;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+}
+.senhorDosAneis img{
+    width: 250px;
+    height: 380px;
+}
+.senhorDosAneis a {
+    text-align: center;
+    margin: 15px auto;
+    margin-bottom: 50px;
+}
+
+.livrosSenhorDosAneis{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*História em quadrinhos*/
+
+.históriasEmQuadrinhos{
+    background-color:#2f2a29;
+    border-bottom: 2px solid #e9e9e9;
+}
+
+/*Turma da Mônica Jovem*/
+
+.livrosMônica{
+    display: flex;
+    justify-content: space-around;
+}
+.livrosMônica a {
+    text-align: center;
+    margin: 15px auto; 
+}
+.livrosMônica img{
+    width: 250px;
+    height: 380px;
+}
+
+/*Coleção Anne Green Gables*/
+
+.anneGreenGables{
+    background-color:#000 ;
+    border-bottom: 2px solid #e9e9e9;
+}
+.livrosGreengables{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.livrosGreengables a{
+    text-align: center;
+    margin: 15px auto; 
+}
+.livrosGreengables img{
+    width: 180px;
+    height: 230px;
+}
+.greenGablesPadrão{
+    width: 27%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*Como Eu Era Antes de Você*/
+
+.ComoEuEraAntes{
+    background-color: #2f2a29;
+    border-bottom: 2px solid #e9e9e9;
+}
+.livrosComoAntes{
+    display: flex;
+    justify-content: space-around;
+    margin-top:50px;
+}
+.comoAntesPadrão{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.comoAntesPadrão img{
+    width: 250px;
+    height: 380px;
+    margin-bottom: 10px;
+}
+
+/*footer*/
+
+.footer{
+    border-top: 2px solid #e9e9e9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    height: 150px;
+}
+.redes-sociais{
+ order: 1;
+ text-align: center;
+}
+.redes-sociais img{
+    filter: invert(100%);
+
+}
+.redes-sociais img:hover{
+    filter: invert(50%);
+    transition: 0.3s;
+}
+.instagram {
+    height:40px;
+    width:50px;
+}
+.facebook{
+    height:40px;
+    width:40px;
+}
+
+/*responsivo main*/
+
+
+@media(max-width: 786px){ 
+
+    /*header*/
+    header, .header{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .cabecalho-nav{
+        display: none;
+    }
+    .logoHeader{
+        margin: 0% 20% 0 0px;    
+    }
+    .logoHeader img{
+        width: 200px;
+        height: 50px;
+        justify-self: left;
+    }
+    /*Menu Mobile*/
+
+    .menuMobile {
+        visibility: visible;
+        flex-direction: column;
+        display: flex;
+        width: 50px;
+    }
+    .menuMobileMain{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: #2f2a29;
+        transform: translateY(-100%);
+        transition: transform 400ms linear;
+    }
+    .menuMobileShut{
+        height: 20px;
+        background-image: url(../imagens/letra-x.png);
+        background-repeat: no-repeat;
+        background-size:  30px 30px;
+        background-position: 15px center;
+        display: flex;
+    }
+    .menu-open{
+        transform: translateY(0);
+    }
+    .menuMobileMain a{
+        text-decoration: none;
+        font-size: 20px;
+        padding: 20px;
+        color: white;
+        border-bottom: 1px solid white;
+    }
+    .menuMobileMain a:nth-child(n + 3):hover{
+        background-color: white;
+        color: black;
+    }
+    .menuMobileIcon{
+        visibility: visible;
+        width: 45px;
+        height: 50px;
+        background-image: url(../imagens/menu-de-tres-linhas.png);
+        background-repeat: no-repeat;    
+        background-size: 45px 50px; 
+        display: flex;
+        margin: auto 30px auto auto;
+    }
+
+    /*subMenuMobile*/
+
+    .subMenuMobile {
+        text-decoration: none;
+        font-size: 20px;
+        padding: 20px 40px 20px 0px;
+        border-bottom: 1px solid white;
+    }
+    .subMenuMobile a{
+        border-bottom: none;
+        padding-right: 80%;   
+    }
+    .subMenuMobile a:hover{
+        color: black;
+    }
+    .subMenuMobile ul{
+        display: none;
+        flex-direction: column;
+    }
+    .subMenuMobile ul li:first-child{
+        margin-top: 35px;
+    }
+    .subMenuMobile ul li{
+        margin-top: 10px;
+    }
+    .subMenuMobile ul a{
+        text-decoration: none;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .subMenuMobile ul a:hover{
+        color: black;
+        background-color: transparent;
+    }
+    .open{
+        width: 10px;
+        height: 20px;
+        background-image: url(../imagens/seta-para-baixo.png);
+        background-size: 10px 10px;
+        background-repeat: no-repeat;
+        background-position: 80% 55%;
+    }
+
+    /*Sobre Nós*/
+
+    
+    /*Vagalume*/
+
+    .livrosVagalume{
+        flex-direction: column;
+        width: 100%;
+    }
+    .livros{
+        width: 100%;
+    }
+
+    /*coleções1*/
+
+    .coleções1{
+        flex-direction: column;
+        background-color: #2f2a29;
+        width: 100%;
+    }
+    .colecaoHarryPotter{
+        width: 100%;
+    }
+    .CronicasDeNarnia{
+        width: 100%;
+    }
+    .tituloPadrao{
+        font-size: 33px;
+        width: 100%;
+    }
+
+    /*senhor dos aneis*/
+
+    .livrosSenhorDosAneis{
+        flex-direction: column;
+        width: 100%;
+    }
+    .sociedadeDoAnel{
+        width: 100%;
+        text-align: center;
+    }
+    .duasTorres{
+        width: 100%;
+        text-align: center;
+    }
+    .retornoDoRei{
+        width: 100%;
+        text-align: center;
+    }
+
+    /*História em quadrinhos*/
+
+    .livrosMônica{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .livroMônica-1{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    /*Anne green gables*/
+
+    .livrosGreengables{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .greenGablesPadrão{
+        width: 100%;
+    }
+
+    /*Como Eu Era Antes de Você*/
+
+    .livrosComoAntes{
+        flex-direction: column;
+    }
+
+    /*footer*/
+
+    .footer{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .redes-sociais{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .footer-copyright{
+        width: 100%;
+    }
+}
