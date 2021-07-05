@@ -3,28 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Document</title>
+    <title>BiblioOne</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css"> <!--CSS principal-->
-    <link rel="stylesheet" href="css/textos-responsiveis.css"> <!--organizando  os textos para ficarem resposíveis-->
+    <link rel="stylesheet" href="css/textos-responsiveis.css"> <!--organização dos textos-->
     <link rel="stylesheet" type="text/css" href="css/slider.css"/><!--CSS da biblioteca pronta slick slider -->
 
+    <link rel="shortcut icon" href="imagens/favicon-16x16.png"/> <!---favicon do site-->
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script><!--jquery sub-menu-mobile-->
+
+
     <!--Google Fonts-->
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
     <!--Fonte Newsreader-->
+
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@200&display=swap" rel="stylesheet">
+
 </head>
 <body>
+
     <!--Começa o header-->
+
     <section id="sobreNos" class="headerSobre">
         <header class="header">
+
             <div class="logoHeader">
                 <img src="imagens/BiblioOneLogotipo.png" alt="logo do site">
             </div>
 
-
             <!--Menu Mobile-->
+
             <nav class="menuMobile">
 
             <div class="menuMobileIcon"></div>
@@ -33,32 +44,31 @@
                 <a class="menuMobileShut" href="#"></a>
 
                 <!--sub menu mobile-->
-                <div class="subMenuMobile">
-                    <a href="#">Coleções</a>
-                    <div class="iconeMobile"></div>
-                        <ul>
-                            <li ><a href="##vagalume">Vagalume</a></li>
-                            <li ><a href="#CronicasDeNarnia">Cronicas De Narnia</a></li>
-                            <li ><a href="#sherlockHolmes">Sherlock Holmes</a></li>
-                            <li ><a href="#harryPotter">Harry Potter</a></li>
-                            <li ><a href="#senhorDosAneis">Senhor Dos Anéis</a></li>
-                            <li ><a href="#turmaMônica">Turma da Mônica</a></li>
-                            <li ><a href="#anneGreenGables">Anne Green Gables</a></li>
-                            <li ><a href="#ComoEuEraAntes">Como Eu Era Antes de Você</a></li>
 
+                <div class="subMenuMobile">
+                    <a href="#" class="open">Coleções</a>
+                        <ul class="menuItem">
+                            <li><a href="#vagalume">Vagalume</a></li>
+                            <li><a href="#CronicasDeNarnia">Cronicas De Narnia</a></li>
+                            <li><a href="#sherlockHolmes">Sherlock Holmes</a></li>
+                            <li><a href="#harryPotter">Harry Potter</a></li>
+                            <li><a href="#senhorDosAneis">Senhor Dos Anéis</a></li>
+                            <li><a href="#turmaMônica">Turma da Mônica</a></li>
+                            <li><a href="#anneGreenGables">Anne Green Gables</a></li>
+                            <li><a href="#ComoEuEraAntes">Como Eu Era Antes de Você</a></li>
                         </ul> 
                 </div> 
-                <a href="#">Sobre Nós</a>
+                <a href="#">Nosso App</a>
                 <a href="#destaques">Destaques</a>
             </div>
             </nav>
 
             <!--sub menu desktop-->
+
             <nav class="cabecalho-nav">   
 
                     <div class="subMenu">
-                        <a href="#">Coleções</a>
-                        <div class="icone"></div>
+                        <a href="#" class="icone">Coleções</a>
                             <ul>
                                 <li><a href="#vagalume">Vagalume</a></li>
                                 <li><a href="#CronicasDeNarnia">Cronicas De Narnia</a></li>
@@ -68,7 +78,6 @@
                                 <li><a href="#turmaMônica">Turma da Mônica</a></li>
                                 <li><a href="#anneGreenGables">Anne Green Gables</a></li>
                                 <li><a href="#ComoEuEraAntes">Como Eu Era Antes de Você</a></li>
-
                             </ul> 
                     </div>           
                 <a href="#sobreNos">Sobre Nós</a>
@@ -78,25 +87,34 @@
         </header>
         
         <!--Sobre Nós-->
+
         <section class="sobreNos"> 
+
             <div class="textoSobreNos">
                 <h1>Bem Vindo</h1>
-                <p>A Biblio One está compromissada a espalhar o conhecimento de uma forma acessível a todos.</p>
+                <p id="log" class="textoAnimado"><em>A Biblio One está compromissada a espalhar o conhecimento de uma forma acessível a todos com </em></p>
             </div>
+
         </section>
+
     </section >
 
     <!--Destaques-->
+
     <section id="destaques" class="destaques">
+
+        <!--titulo-->
 
         <div class="tituloDestaques">
             <h1>Destaques</h1>
         </div>
 
+        <!--livros-->
+
         <div class="livrosDestaques">
 
             <div class=" destaquesPadrao">
-                <img src="imagens/sherlock.jpg" alt="Capa do livro A Aldeia Sagrada">
+                <img src="imagens/sherlock.jpg" alt="Capa do livro Sherlock holmes COleção Completa">
                 <a href="#">Leia Aqui</a>
             </div>
 
@@ -106,7 +124,7 @@
             </div>
 
             <div class="destaquesPadrao">
-                <img src="imagens/Harry.jpg" alt="Capa do livro A Aldeia Sagrada">
+                <img src="imagens/Harry.jpg" alt="Capa do livro Harry Potter coleção completa">
                 <a href="#">Leia Aqui</a>
             </div>
 
@@ -116,12 +134,12 @@
              </div>
 
              <div class="destaquesPadrao">
-                <img src="imagens/capaNarnia.png" alt="Capa do livro A Aldeia Sagrada">
+                <img src="imagens/capaNarnia.png" alt="Capa do livro As Crônicas De Narnia Coleção Completa">
                 <a href="#">Leia Aqui</a>
             </div>
 
             <div class="destaquesPadrao">
-                <img src="imagens/sapiens.jpg" alt="Capa do livro A Aldeia Sagrada">
+                <img src="imagens/sapiens.jpg" alt="Capa do livro Sapiens Uma breve História da Humanidade">
                 <a href="#">Leia Aqui</a>
             </div>
         </div>
@@ -129,14 +147,20 @@
 
 
     <!--Começa a parte dos livros-->
+
     <main class="apresentaçãoLivros-main">
 
        <!--Coleção Vagalume-->
 
         <section id="vagalume" class="colecaoVagalume">
+
+            <!--Titulo-->
+
             <div class="tituloPadrao" >
                 </h1> Coleção Vagalume</h1>
             </div>
+
+            <!--Livros-->
 
             <div class="livrosVagalume">
 
@@ -146,57 +170,57 @@
                 </div>
                 
                 <div class="livros">
-                    <img src="imagens/aArvore.jpg" alt="Capa do livro A Aldeia Sagrada">
+                    <img src="imagens/aArvore.jpg" alt="Capa do livro A Arvore Que Dava Dinheiro">
                     <a href="#" class="botões">Leia Aqui</a>
                 </div>
                 
                 <div class="livros">
-                    <img src="imagens/A ilha perdida.jpg" alt="Capa do livro A Aldeia Sagrada">
+                    <img src="imagens/A ilha perdida.jpg" alt="Capa do livro A Ilha Perdida">
                     <a href="#" class="botões">Leia Aqui</a>
                 </div>
                 
                 <div class="livros">
-                    <img src="imagens/Catarina.jpg" alt="Capa do livro A Aldeia Sagrada">
+                    <img src="imagens/Catarina.jpg" alt="Capa do livro Catarina Malagueta">
                     <a href="#" class="botões">Leia Aqui</a>
                 </div>
                       
                 <div class="livros">
-                    <img src="imagens/rua-quinze.jpg" alt="Capa do livro A Aldeia Sagrada">
+                    <img src="imagens/rua-quinze.jpg" alt="Capa do livro A Turma da Rua Quinze">
                     <a href="#" class="botões">Leia Aqui</a>
                 </div>
                 
                 <div class="livros">
-                    <img src="imagens/açucar-amargo.jpg" alt="Capa do livro A Aldeia Sagrada">
+                    <img src="imagens/açucar-amargo.jpg" alt="Capa do livro Açucar Amargo">
                     <a href="#" class="botões">Leia Aqui</a>
                 </div>
                 
                 <div class="livros">
-                    <img src="imagens/deu-a-louca-no-tempo.jpg" alt="Capa do livro A Aldeia Sagrada">
+                    <img src="imagens/deu-a-louca-no-tempo.jpg" alt="Capa do livro Deu a Louca No tempo">
                     <a href="#" class="botões">Leia Aqui</a>
                 </div>
                 
                 <div class="livros">
-                    <img src="imagens/missão-no-oriente.jpg" alt="Capa do livro A Aldeia Sagrada">
+                    <img src="imagens/missão-no-oriente.jpg" alt="Capa do livro Missão no Oriente">
                     <a href="#" class="botões">Leia Aqui</a>
                 </div>
 
                 <div class="livros">
-                    <img src="imagens/joana-banana.jpg" alt="Capa do livro A Aldeia Sagrada">
+                    <img src="imagens/joana-banana.jpg" alt="Capa do livro Joana Banana">
                     <a href="#" class="botões">Leia Aqui</a>
                 </div>
             
                 <div class="livros">
-                    <img src="imagens/borboleta-atiria.jpg" alt="Capa do livro A Aldeia Sagrada">
+                    <img src="imagens/borboleta-atiria.jpg" alt="Capa do livro O caso da borboleta atíria">
                     <a href="#" class="botões">Leia Aqui</a>
                 </div>
             
                 <div class="livros">
-                    <img src="imagens/fabricante-terremoto.jpg" alt="Capa do livro A Aldeia Sagrada">
+                    <img src="imagens/fabricante-terremoto.jpg" alt="Capa do livro O Fabricante de terremotos">
                     <a href="#" class="botões">Leia Aqui</a>
                 </div>
             
                 <div class="livros">
-                    <img src="imagens/fantasma-william.jpg" alt="Capa do livro A Aldeia Sagrada">
+                    <img src="imagens/fantasma-william.jpg" alt="Capa do livro O Fantasma de Tio William">
                     <a href="#" class="botões">Leia Aqui</a>
                 </div>
             </div>        
@@ -208,12 +232,16 @@
 
            <div id="harryPotter" class="colecaoHarryPotter">
     
+            <!--titulo-->
+
                 <div class="tituloPadrao">
                 <h1>Harry Potter<br>A Coleção Completa</h1>
                 </div>
     
+            <!--livro-->
+
                 <div class="livroHarryPotter">
-                <img src="imagens/Harry.jpg" alt="Capa do livro A Aldeia Sagrada">
+                <img src="imagens/Harry.jpg" alt="Capa do livro Harry Potter Coleção Completa">
                 <a href="#" class="botões">Leia Aqui</a>
                 </div>
             </div>
@@ -221,25 +249,34 @@
     
            <div id="CronicasDeNarnia" class="CronicasDeNarnia">
     
+            <!--titulo-->
+
             <div class="tituloPadrao">
                 <h1>As Crônicas de Narnia<br> A Coleção Completa</h1>
             </div>
     
+            <!--livro-->
+
             <div class="livroCronicasDeNarnia">
-                <img src="imagens/capaNarnia.png" alt="Capa do livro A Aldeia Sagrada">
+                <img src="imagens/capaNarnia.png" alt="Capa do livro As Crônicas de Narnia Coleção completa">
                 <a href="#" class="botões">Leia Aqui</a>
             </div>
            </div>
+
            <!--Sherlock Holmes-->
 
            <div id="sherlockHolmes" class="CronicasDeNarnia">
     
+            <!--titulo-->
+
             <div class="tituloPadrao">
                 <h1>Sherlock Holmes<br> Edição Completa</h1>
             </div>
-    
+
+            <!--livro-->
+
             <div class="sherlockHolmes">
-                <img src="imagens/sherlock.jpg" alt="Capa do livro A Aldeia Sagrada">
+                <img src="imagens/sherlock.jpg" alt="Capa do livro Sherlock Holmes Coleção Completa">
                 <a href="#" class="botões">Leia Aqui</a>
             </div>
            </div>
@@ -248,9 +285,14 @@
        <!--Trilogia Senhor dos aneis-->
 
        <section id="senhorDosAneis" class="senhorDosAneis">
+
+        <!--titulo-->
+
         <div class="tituloPadrao">
             <h1>TRILOGIA<br> O Senhor Dos Anéis</h1>
         </div>
+
+        <!--livros-->
 
         <div class="livrosSenhorDosAneis">
             <div class="sociedadeDoAnel">
@@ -259,7 +301,7 @@
             </div>
     
             <div class="duasTorres">
-                <img src="imagens/duastorres.jpg" alt="">
+                <img src="imagens/duastorres.jpg" alt="Capa do livro As Duas Torres">
                 <a href="#" class="botões">Leia Aqui</a>
             </div>
     
@@ -275,72 +317,93 @@
        <section class="históriasEmQuadrinhos">
 
         <!--Turma da Mônica-->
+
         <div class="turmaDaMônicaJovem">
+
+            <!--titulo-->
+
             <div class="tituloPadrao">
                 <h2>Turma Da Mônica Jovem</h2>
             </div>
 
+            <!--livros-->
+
             <div class="livrosMônica">
                 <div class="livroMônica-padrão">
-                    <img src="imagens/Mônica1.jpg"  alt="Capa do livro o retorno do Rei">
+                    <img src="imagens/Mônica1.jpg"  alt="Capa do livro Turma Da Mônica Jovem Eles Cresceram">
                     <a href="#" class="botões">Leia Aqui</a>
                 </div>
 
                 <div class="livroMônica-padrão">
-                    <img src="imagens/Mônica2.jpg"  alt="Capa do livro o retorno do Rei">
+                    <img src="imagens/Mônica2.jpg"  alt="Capa do livro Turma Da Mônica Jovem Terrível Obsessão">
                     <a href="#" class="botões">Leia Aqui</a>
                 </div>
 
                 <div class="livroMônica-padrão">
-                    <img src="imagens/Mônica3.jpg"  alt="Capa do livro o retorno do Rei">
+                    <img src="imagens/Mônica3.jpg"  alt="Capa do livro Turma Da Mônica Jovem Um mundo de distância">
                     <a href="#" class="botões">Leia Aqui</a>
                 </div>
 
             </div>
         </div>
        </section>
+
        <!--Coleção Anne Green Gables-->
+
        <section id="anneGreenGables" class="anneGreenGables">
+
+        <!--titulo-->
+
         <div class="tituloPadrao">
             <h1>Anne Green Gables</h1>
         </div>
+
+        <!--livros-->
+
         <div class="livrosGreengables">
             <div class="greenGablesPadrão">
-                <img src="imagens/anne-de-green.jpg"  alt="Capa do livro o retorno do Rei">
+                <img src="imagens/anne-de-green.jpg"  alt="Capa do livro Anne de Green Gables">
                 <a href="#" class="botões">Leia Aqui</a>
             </div>
 
             <div class="greenGablesPadrão">
-                <img src="imagens/anee-avonlea.jpg"  alt="Capa do livro o retorno do Rei">
+                <img src="imagens/anee-avonlea.jpg"  alt="Capa do livro Anne de Avoneia">
                 <a href="#" class="botões">Leia Aqui</a>
             </div>
 
             <div class="greenGablesPadrão">
-                <img src="imagens/anne-ilha.jpg"  alt="Capa do livro o retorno do Rei">
+                <img src="imagens/anne-ilha.jpg"  alt="Capa do livro Anne da Ilha">
                 <a href="#" class="botões">Leia Aqui</a>
             </div>
 
             <div class="greenGablesPadrão">
-                <img src="imagens/anee-poplars.jpg"  alt="Capa do livro o retorno do Rei">
+                <img src="imagens/anee-poplars.jpg"  alt="Capa do livro Anne de Windy Poplars">
                 <a href="#" class="botões">Leia Aqui</a>
             </div>
 
             <div class="greenGablesPadrão">
-                <img src="imagens/anee-casa-sonhos.jpg"  alt="Capa do livro o retorno do Rei">
+                <img src="imagens/anee-casa-sonhos.jpg"  alt="Capa do livro Anne e a Casa Dos Sonhos">
                 <a href="#" class="botões">Leia Aqui</a>
             </div>
             <div class="greenGablesPadrão">
-                <img src="imagens/anne-ingleside.jpg"  alt="Capa do livro o retorno do Rei">
+                <img src="imagens/anne-ingleside.jpg"  alt="Capa do livro Anne de Ingleside">
                 <a href="#" class="botões">Leia Aqui</a>
             </div>
         </div>
        </section>
 
        <!--Coleção Como Eu Era antes de vocÊ-->
+
        <section id="ComoEuEraAntes" class="ComoEuEraAntes">
+
+        <!--titulo-->
+
         <div class="tituloPadrao">
             <h1>Como Eu Era Antes de Você</h1>
         </div>
+
+        <!--livros-->
+
         <div class="livrosComoAntes">
             <div class="comoAntesPadrão">
                 <img src="imagens/COMO1.jpg"  alt="Capa do livro como eu era antes de você">
@@ -362,6 +425,8 @@
 
     </main>
 
+    <!--footer-->
+
     <footer class="footer">
 
         <div class="redes-sociais">
@@ -370,16 +435,18 @@
         </div>
 
         <div class="footer-copyright">
-            <p>&copy; 2021 por Biblio One</p>
+            <p>&copy; 2021 Biblio One. Todos os direitos reservados</p>
         </div>
     </footer>
 
 
     <!--slick slider-->
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="js/slider.js"></script> <!--modificação do slick manual-->
-    <script type="text/javascript" src="js/menu-mobile-animação.js"></script> <!--animação para  o menu mobile-->
+
+    <script type="text/javascript" src="js/animações_e_menus.js"></script> <!--animações-->
 </body>
 </html>
